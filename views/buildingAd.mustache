@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+    {{>head}}
+
+    <body class="main-body">
+        {{>nav}}
+        <div class="main-container" style="margin-top:50px; margin-left:50px;">
+            <h1>Browse our recent listings</h1>
+            <h3>{{name}}
+                {{city}}
+                {{state}}</h3>
+            <br/>
+            {{#apartments}}
+                {{>potentialTenant}}
+                <br/>
+            {{/apartments}}
+        </div>
+        
+        {{>footer}}
+        {{>scripts}}
+    </body>
+
+</html>

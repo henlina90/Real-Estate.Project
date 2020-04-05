@@ -1,0 +1,62 @@
+<div style="margin-left: 50px; margin-right: 50px;">
+    <div class="row">
+        <div class="col-sm-5">
+            <a href="{{ mainImage }}" data-lightbox="true">
+                <img alt="Thumb" src="{{ mainImage }}"/>
+            </a>
+
+        </div>
+        <div class="col-sm-7">
+            <form action="/apartment/{{ id }}" method="POST">
+                <div class="col-sm-8">
+                    <label>Apartment Description</label>
+                    <textarea name="description">{{ description }}</textarea>
+                </div>
+                <div class="col-sm-3">
+                    <label>Price:</label>
+                    <input type="text" name="price" value="{{ price }}"/>
+                </div>
+                <div class="col-sm-3">
+                    <label>Bedrooms:</label>
+                    <div class="input-number">
+                        <input type="number" name="numBed" placeholder="Quantity" value="{{ numBed }}" min="0" max="10"/>
+                        <div class="input-number__controls">
+                            <span class="input-number__increase">
+                                <i class="stack-up-open"></i>
+                            </span>
+                            <span class="input-number__decrease">
+                                <i class="stack-down-open"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <label>Bathrooms:</label>
+                    <div class="input-number">
+                        <input type="number" name="numBath" placeholder="Quantity" value="{{ numBath }}" min="1" max="10"/>
+                        <div class="input-number__controls">
+                            <span class="input-number__increase">
+                                <i class="stack-up-open"></i>
+                            </span>
+                            <span class="input-number__decrease">
+                                <i class="stack-down-open"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <input type="text" name="mainImage" value="{{ mainImage }}">
+                    <button type="submit">SAVE CHANGES</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+            <h3>Current Photos</h3>
+            {{#remoteImages}}
+                <a href={{ url }} data-lightbox="gallery-1">
+                    <img alt="Thumb" src="{{ url }}" style="height: 100px;"/>
+                </a>
+            {{/remoteImages}}
+            <button type="submit" class="btn-upload" id="{{ id }}">Upload photos</button>
+        </div>
+    </div>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+    {{>head}}
+
+    <body class="">
+        {{>topnav}}
+        {{>nav}}
+        <div class="main-container">
+            <form method="POST" action="/login" style="margin-top: 100px; margin-left:300px; margin-right:300px;">
+                <div class="col-md-12">
+                    <label>Username:</label>
+                    <input type="email" name="email" placeholder="Please provide your e-mail to login">
+                </div>
+                <div class="col-md-12">
+                    <label>Password:</label>
+                    <input type="password" name="password" placeholder="Enter your password">
+                </div>
+                <div class="col-md-4">
+                    <button type="submit" class="btn btn--primary">Log In</button>
+                </div>
+            </form>
+        </div>
+        {{>footer}}
+        {{>scripts}}
+    </body>
+</html>

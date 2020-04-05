@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+    {{>head}}
+
+    <body class="main-body">
+        {{>topnav}}
+        {{>nav}}
+        <div class="main-container"><section class="imagebg" data-gradient-bg="#dadada34,#fdfdfd,#fdfdfd,#fdfdfd">
+
+            <section class="text-center height-60 margin-top: 10px;">
+                    <div style="width:100%; height 100%; z-index:999;"></div>
+                <div class="container pos-vertical-center">
+                    <div class="row ">
+                        <div class="col-md-12 ">
+                            <div class="typed-headline">
+                                <span class="h1 inline-block">Buy or sell your home</span>
+                                <br/>
+                                <span class="h1 inline-block typed-text typed-text--cursor color--primary" data-typed-strings="with high confidence, with a peace of mind, with a different approach, with 42 Living Real Estate"></span>
+                            </div>
+<br/>
+<br/>
+
+                    <div class="boxed boxed--sm bg--white text-left" >
+                                <form class="form--horizontal row m-0 ">
+                                    <div class="col-md-10">
+                                        <input type="text" name="search" placeholder="Enter an address, neighborhood, city, or ZIP code">
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button type="submit" class="btn btn--primary type--uppercase">Search</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <p class="lead">
+                            <br/>
+                                <h5>42 LIVING Real Estate is a dynamic real estate company offering a full range of services to home buyers and sellers.
+                                <br/>Our agents create results through teamwork, experience and knowing our community.
+                                <br/>
+                                <br/>Bridging the gap between ordinary and <i><b>extraordinary.</i></b></h5>
+                            </p>
+                        
+                    </div>
+                </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section></section>
+                
+
+            <div class="text-center"></div>
+            <section class="text-center bg--secondary main-body">
+             <span class="recent-listing">Recent Listings</span>
+             <br/>
+             <br/>
+             
+                <div class="container">
+                    <div class="row">
+                        {{#data}}
+
+                            {{>buildingSmall}}
+
+                        {{/data}}
+                    </div>
+                    
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+
+           <section class="cover space--lg unpad--bottom bg--secondary switchable text-center">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-md-6">
+                            <div class="mt--2">
+                                <h1>42 Living Guide</h1>
+                                <p class="lead">
+                                    Everything you need to know when looking at different types of homes for sale all in one place.
+                                </p>
+                                <a class="btn btn--primary type--uppercase" href="#">
+                                    <span class="btn__text">
+                                        Buyer/Seller Guides
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <img alt="Image" src="images/realestateimg.jpg">
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section> 
+            
+<section class="switchable bg--dark opacity:">
+                                <div class="container">
+                                    <div class="row justify-content-between">
+                                        <div class="col-md-5">
+                                            <p class="lead">
+                                               <i class="fa fa-envelope"></i>
+                                                <a href="#"> 42living@realestate.com</a>
+                                                <br> <i class="fa fa-phone"></i> +(666)121-4321 
+                                            </p>
+                                            <p class="lead">
+                                                Give us a call or drop by anytime, we endeavour to answer all enquiries within 24 hours on business days.
+                                            </p>
+                                            <p class="lead">
+                                                We are open from 9am — 5pm week days.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-6 col-12">
+                                            <form class="form-email row" data-success="Thanks for your enquiry, we'll be in touch shortly." data-error="Please fill in all fields correctly.">
+                                                <div class="col-md-6 col-12">
+                                                    <label>Your Name:</label>
+                                                    <input type="text" name="Name" class="validate-required">
+                                                </div>
+                                                <div class="col-md-6 col-12">
+                                                    <label>Email Address:</label>
+                                                    <input type="email" name="email" class="validate-required validate-email">
+                                                </div>
+                                                <div class="col-md-12 col-12">
+                                                    <label>Message:</label>
+                                                    <textarea rows="4" name="Message"></textarea>
+                                                </div>
+                                                <div class="col-12">
+                                                    <button type="submit" class="btn btn--primary type--uppercase">Send Enquiry</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <!--end of row-->
+                                </div>
+                                <!--end of container-->
+                            </section>
+        {{>footer}}
+        {{>scripts}}
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<div class="row" av>
+    <div class="col-sm-4">
+        <a href="{{ mainImage }}" data-lightbox="true">
+            <img alt="Thumb" src="{{mainImage}}"/>
+        </a>
+    </div>
+    <div class="col-sm-8">
+        <label style="font-size:13px; font-weight:800;">Apartment Description:
+        </label>
+        <label>{{ description }}</label>
+        <br/>
+    {{! </div>
+    <div class="col-sm-4"> }}
+        <label style="font-size:13px; font-weight:800;">Price:
+        </label>
+        <label>{{ price }}</label>
+        <br/>
+    {{! </div> }}
+    {{! <div class="col-sm-4"> }}
+        <label style="font-size:13px; font-weight:800;">Bedrooms:
+        </label>
+        <label>{{ numBed }}</label>
+        <br/>
+    {{! </div>
+    <div class="col-sm-4"> }}
+        <label style="font-size:13px; font-weight:800;">Bathrooms:</label>
+        <label>{{ numBath }}</label>
+        <br/>
+        <br/>
+        <label style="font-size:13px; font-weight:800;">Current Photos</label>
+        <br/>
+    {{#remoteImages}}
+        <a href={{ url }} data-lightbox="gallery-1">
+            <img alt="Thumb" src="{{ url }}" style="height: 100px;"/>
+        </a>
+    {{/remoteImages}}
+    {{! </div> }}
+</div>
+</div>
+<br/>
+
+{{! <div class="row"> }}
+{{! </div> }}

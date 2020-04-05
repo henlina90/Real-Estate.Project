@@ -1,0 +1,75 @@
+/*! Place your custom styles here */
+
+.main-body {
+  background-color: #dadada34;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* .footer-mustache {
+  background: rgb(255, 255, 255);
+  color: black;
+} */
+
+/* .footer {
+  padding-top: 10px;
+} */
+
+.recent-listing {
+  font-size: 25px;
+  color: black;
+}
+
+.contact {
+  width: 40%;
+  max-width: 120rem;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+form {
+  width: 100%;
+  margin: 0 auto;
+}
+
+form label {
+  font-size: 1rem;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 5px;
+}
+
+input[type="submit"] {
+  width: initial;
+  background-color: #fdfdfd;
+  color: rgb(0, 0, 0);
+  padding: 1rem 2rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: background-color 650ms;
+}
+
+input[type="submit"]:hover {
+  color: black;
+  background: rgb(44, 31, 161);
+}
+
+.bar {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.modal-instance {
+  color: rgba(0, 0, 0, 0.781);
+}
+
+.feature {
+  opacity: 4;
+}
